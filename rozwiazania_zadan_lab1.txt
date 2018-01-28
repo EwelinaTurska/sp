@@ -1,0 +1,540 @@
+eturska@linux-p137-09:~$ mkdir sp
+eturska@linux-p137-09:~$ cd sp
+eturska@linux-p137-09:~/sp$ mkdir temp
+eturska@linux-p137-09:~/sp$ cd temp
+eturska@linux-p137-09:~/sp/temp$ mkdir dom
+eturska@linux-p137-09:~/sp/temp$ mkdr nauka
+Nie odnaleziono polecenia 'mkdr', czy chodziło ci o:
+ Polecenie 'mkdir' z pakietu 'coreutils' (main)
+mkdr: nie znaleziono polecenia
+eturska@linux-p137-09:~/sp/temp$ mkdir nauka
+eturska@linux-p137-09:~/sp/temp$ mkdir praca
+eturska@linux-p137-09:~/sp/temp$ cd nuka
+bash: cd: nuka: Nie ma takiego pliku ani katalogu
+eturska@linux-p137-09:~/sp/temp$ cd nauka
+eturska@linux-p137-09:~/sp/temp/nauka$ mkdir c
+eturska@linux-p137-09:~/sp/temp/nauka$ mkdir logo
+eturska@linux-p137-09:~/sp/temp/nauka$ mkdir pascal
+eturska@linux-p137-09:~/sp/temp/nauka$ cd.
+Nie odnaleziono polecenia 'cd.', czy chodziło ci o:
+ Polecenie 'cdo' z pakietu 'cdo' (universe)
+ Polecenie 'cde' z pakietu 'cde' (universe)
+ Polecenie 'cdp' z pakietu 'irpas' (multiverse)
+ Polecenie 'cdi' z pakietu 'cdo' (universe)
+ Polecenie 'cd5' z pakietu 'cd5' (universe)
+ Polecenie 'cdw' z pakietu 'cdw' (universe)
+ Polecenie 'cdb' z pakietu 'tinycdb' (main)
+ Polecenie 'cdv' z pakietu 'codeville' (universe)
+cd.: nie znaleziono polecenia
+eturska@linux-p137-09:~/sp/temp/nauka$ cd..
+cd..: nie znaleziono polecenia
+eturska@linux-p137-09:~/sp/temp/nauka$ cd ..
+eturska@linux-p137-09:~/sp/temp$ mkdir praca
+mkdir: nie można utworzyć katalogu „praca”: Plik istnieje
+eturska@linux-p137-09:~/sp/temp$ cd praca
+eturska@linux-p137-09:~/sp/temp/praca$ mkdir zlecenia
+eturska@linux-p137-09:~/sp/temp/praca$ rmdir zlecenia
+eturska@linux-p137-09:~/sp/temp/praca$ mkdir dokumenty
+eturska@linux-p137-09:~/sp/temp/praca$ mkdir zlecenia
+eturska@linux-p137-09:~/sp/temp/praca$ cd zlecenia
+eturska@linux-p137-09:~/sp/temp/praca/zlecenia$ mkdir niezrealizowane
+eturska@linux-p137-09:~/sp/temp/praca/zlecenia$ mkdir zrealizowane
+eturska@linux-p137-09:~/sp/temp/praca/zlecenia$ cd ..
+eturska@linux-p137-09:~/sp/temp/praca$ cd ..
+eturska@linux-p137-09:~/sp/temp$ tree
+.
+├── dom
+├── nauka
+│   ├── c
+│   ├── logo
+│   └── pascal
+└── praca
+    ├── dokumenty
+    └── zlecenia
+        ├── niezrealizowane
+        └── zrealizowane
+
+10 directories, 0 files
+eturska@linux-p137-09:~/sp/temp$ cd ..
+eturska@linux-p137-09:~/sp$ ls
+temp
+eturska@linux-p137-09:~/sp$ touch lab1
+eturska@linux-p137-09:~/sp$ geany lab1
+eturska@linux-p137-09:~/sp$ geany lab1
+eturska@linux-p137-09:~/sp$ cd temp
+eturska@linux-p137-09:~/sp/temp$ cd dom
+eturska@linux-p137-09:~/sp/temp/dom$ mkdir wazne-sprawy
+eturska@linux-p137-09:~/sp/temp/dom$ cd wazne-sprawy/
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ touch rachunki.txt
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cp rachunki.txt ~temp/praca/zlecenia/zrealizowane
+cp: nie można utworzyć zwykłego pliku '~temp/praca/zlecenia/zrealizowane': Nie ma takiego pliku ani katalogu
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cp rachunki.txt ~sp/temp/praca/zlecenia/zrealizowane
+cp: nie można utworzyć zwykłego pliku '~sp/temp/praca/zlecenia/zrealizowane': Nie ma takiego pliku ani katalogu
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cp rachunki.txt ~sp/temp/praca/zlecenia/zrealizowane/rachunki.txt
+cp: nie można utworzyć zwykłego pliku '~sp/temp/praca/zlecenia/zrealizowane/rachunki.txt': Nie ma takiego pliku ani katalogu
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ ls
+rachunki.txt
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cp rachunki.txt ~sp/temp/praca/zlecenia/zrealizowane/rachunki.txt
+cp: nie można utworzyć zwykłego pliku '~sp/temp/praca/zlecenia/zrealizowane/rachunki.txt': Nie ma takiego pliku ani katalogu
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cp rachunki.txt ~/sp/temp/praca/zlecenia/zrealizowane/rachunki.txt
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cd ..
+eturska@linux-p137-09:~/sp/temp/dom$ cd ..
+eturska@linux-p137-09:~/sp/temp$ cd praca
+eturska@linux-p137-09:~/sp/temp/praca$ c zrealizowane
+c: nie znaleziono polecenia
+eturska@linux-p137-09:~/sp/temp/praca$ cd zrealizowane
+bash: cd: zrealizowane: Nie ma takiego pliku ani katalogu
+eturska@linux-p137-09:~/sp/temp/praca$ cd zlecenia
+eturska@linux-p137-09:~/sp/temp/praca/zlecenia$ cd zrealizowane/
+eturska@linux-p137-09:~/sp/temp/praca/zlecenia/zrealizowane$ mv rachunki.txt wykonano.txt
+eturska@linux-p137-09:~/sp/temp/praca/zlecenia/zrealizowane$ s
+s: nie znaleziono polecenia
+eturska@linux-p137-09:~/sp/temp/praca/zlecenia/zrealizowane$ ls
+wykonano.txt
+eturska@linux-p137-09:~/sp/temp/praca/zlecenia/zrealizowane$ geany wykonano.txt eturska@linux-p137-09:~/sp/temp/praca/zlecenia/zrealizowane$ split -C 5 wykonano.txt 
+eturska@linux-p137-09:~/sp/temp/praca/zlecenia/zrealizowane$ ls
+wykonano.txt  xaa  xab  xac
+eturska@linux-p137-09:~/sp/temp/praca/zlecenia/zrealizowane$ geany xaa
+eturska@linux-p137-09:~/sp/temp/praca/zlecenia/zrealizowane$ geany xab
+eturska@linux-p137-09:~/sp/temp/praca/zlecenia/zrealizowane$ ls -l
+razem 2
+-rw------- 1 eturska domain users 11 paź 15 11:17 wykonano.txt
+-rw------- 1 eturska domain users  5 paź 15 11:22 xaa
+-rw------- 1 eturska domain users  5 paź 15 11:22 xab
+-rw------- 1 eturska domain users  1 paź 15 11:22 xac
+eturska@linux-p137-09:~/sp/temp/praca/zlecenia/zrealizowane$ cd ..
+eturska@linux-p137-09:~/sp/temp/praca/zlecenia$ cd ~/sp/temp/nauka/logo
+eturska@linux-p137-09:~/sp/temp/nauka/logo$ cp ~/sp/temp/praca/zlecenia/zrealizowane/xaa xab xac ~/sp/temp/praca/dokumenty/
+cp: nie można wykonać stat na 'xab': Nie ma takiego pliku ani katalogu
+cp: nie można wykonać stat na 'xac': Nie ma takiego pliku ani katalogu
+eturska@linux-p137-09:~/sp/temp/nauka/logo$ cp ~/sp/temp/praca/zlecenia/zrealizowane/xaa xab xac ~/sp/temp/praca/dokumenty/xaa xab xac
+cp: cel 'xac' nie jest katalogiem
+eturska@linux-p137-09:~/sp/temp/nauka/logo$ cd ~/sp/temp/praca/dokumenty/
+eturska@linux-p137-09:~/sp/temp/praca/dokumenty$ ls
+xaa
+eturska@linux-p137-09:~/sp/temp/praca/dokumenty$ cd ~/sp/temp/nauka/logo
+eturska@linux-p137-09:~/sp/temp/nauka/logo$ cp xaa xab xac ~/sp/temp/praca/dokumenty/
+cp: nie można wykonać stat na 'xaa': Nie ma takiego pliku ani katalogu
+cp: nie można wykonać stat na 'xab': Nie ma takiego pliku ani katalogu
+cp: nie można wykonać stat na 'xac': Nie ma takiego pliku ani katalogu
+eturska@linux-p137-09:~/sp/temp/nauka/logo$ cd ~/sp/temp/praca/dokumenty/
+eturska@linux-p137-09:~/sp/temp/praca/dokumenty$ ls
+xaa
+eturska@linux-p137-09:~/sp/temp/praca/dokumenty$ rm xaa
+eturska@linux-p137-09:~/sp/temp/praca/dokumenty$ ls
+eturska@linux-p137-09:~/sp/temp/praca/dokumenty$ cd ~/sp/temp/nauka/logo
+eturska@linux-p137-09:~/sp/temp/nauka/logo$ touch wykonano.txt
+eturska@linux-p137-09:~/sp/temp/nauka/logo$ split -C 5 wykonano.txt 
+eturska@linux-p137-09:~/sp/temp/nauka/logo$ ls
+wykonano.txt
+eturska@linux-p137-09:~/sp/temp/nauka/logo$ geany wykonano.txt 
+eturska@linux-p137-09:~/sp/temp/nauka/logo$ split -C 5 wykonano.txt 
+eturska@linux-p137-09:~/sp/temp/nauka/logo$ ls
+wykonano.txt  xaa  xab  xac
+eturska@linux-p137-09:~/sp/temp/nauka/logo$ ls -l
+razem 2
+-rw------- 1 eturska domain users 11 paź 15 11:39 wykonano.txt
+-rw------- 1 eturska domain users  5 paź 15 11:39 xaa
+-rw------- 1 eturska domain users  5 paź 15 11:39 xab
+-rw------- 1 eturska domain users  1 paź 15 11:39 xac
+eturska@linux-p137-09:~/sp/temp/nauka/logo$ geany lab1
+eturska@linux-p137-09:~/sp/temp/nauka/logo$ cp xaa xab xac ~/sp/temp/praca/dokumenty/
+eturska@linux-p137-09:~/sp/temp/nauka/logo$ cd ~/sp/temp/praca/dokumenty/
+eturska@linux-p137-09:~/sp/temp/praca/dokumenty$ ls
+xaa  xab  xac
+eturska@linux-p137-09:~/sp/temp/praca/dokumenty$ cat xaa xab xac odtworzono.txt
+1234567890
+cat: odtworzono.txt: Nie ma takiego pliku ani katalogu
+eturska@linux-p137-09:~/sp/temp/praca/dokumenty$ ls
+xaa  xab  xac
+eturska@linux-p137-09:~/sp/temp/praca/dokumenty$ cat xaa xab xac > odtworzono.txt
+eturska@linux-p137-09:~/sp/temp/praca/dokumenty$ ls
+odtworzono.txt  xaa  xab  xac
+eturska@linux-p137-09:~/sp/temp/praca/dokumenty$ geany odtworzono.txt 
+eturska@linux-p137-09:~/sp/temp/praca/dokumenty$ cp odtworzono.txt ~/sp/temp/dom/wazne-sprawy/
+eturska@linux-p137-09:~/sp/temp/praca/dokumenty$ cd ~/sp/temp/dom/wazne-sprawy/
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ ls
+odtworzono.txt  rachunki.txt
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ diff odtworzono.txt ~/sp/temp/nauka/logo/wykonano.txt 
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ man diff
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ diff -s odtworzono.txt ~/sp/temp/nauka/logo/wykonano.txt 
+Pliki odtworzono.txt i /home/eturska/sp/temp/nauka/logo/wykonano.txt są identyczne
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ diff -q odtworzono.txt ~/sp/temp/nauka/logo/wykonano.txt 
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cal 10 2016
+  Październik 2016    
+ni po wt śr cz pi so  
+                   1  
+ 2  3  4  5  6  7  8  
+ 9 10 11 12 13 14 15  
+16 17 18 19 20 21 22  
+23 24 25 26 27 28 29  
+30 31                 
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cal -3 09 2016 10 21016 11 2016
+Usage: cal [general options] [-hjy] [[month] year]
+       cal [general options] [-hj] [-m month] [year]
+       ncal [general options] [-bhJjpwySM] [-s country_code] [[month] year]
+       ncal [general options] [-bhJeoSM] [year]
+General options: [-NC31] [-A months] [-B months]
+For debug the highlighting: [-H yyyy-mm-dd] [-d yyyy-mm]
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cal 9 2016 10 2016 11 016
+Usage: cal [general options] [-hjy] [[month] year]
+       cal [general options] [-hj] [-m month] [year]
+       ncal [general options] [-bhJjpwySM] [-s country_code] [[month] year]
+       ncal [general options] [-bhJeoSM] [year]
+General options: [-NC31] [-A months] [-B months]
+For debug the highlighting: [-H yyyy-mm-dd] [-d yyyy-mm]
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cal 9 2016 10 2016 11 2016
+Usage: cal [general options] [-hjy] [[month] year]
+       cal [general options] [-hj] [-m month] [year]
+       ncal [general options] [-bhJjpwySM] [-s country_code] [[month] year]
+       ncal [general options] [-bhJeoSM] [year]
+General options: [-NC31] [-A months] [-B months]
+For debug the highlighting: [-H yyyy-mm-dd] [-d yyyy-mm]
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ man cal
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cal -3 11 2016
+                            2016
+    Październik             Listopad              Grudzień        
+ni po wt śr cz pi so  ni po wt śr cz pi so  ni po wt śr cz pi so  
+                   1         1  2  3  4  5               1  2  3  
+ 2  3  4  5  6  7  8   6  7  8  9 10 11 12   4  5  6  7  8  9 10  
+ 9 10 11 12 13 14 15  13 14 15 16 17 18 19  11 12 13 14 15 16 17  
+16 17 18 19 20 21 22  20 21 22 23 24 25 26  18 19 20 21 22 23 24  
+23 24 25 26 27 28 29  27 28 29 30           25 26 27 28 29 30 31  
+30 31                                                             
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ man cal
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cal -2 10 2016
+cal: błędna opcja -- '2'
+Usage: cal [general options] [-hjy] [[month] year]
+       cal [general options] [-hj] [-m month] [year]
+       ncal [general options] [-bhJjpwySM] [-s country_code] [[month] year]
+       ncal [general options] [-bhJeoSM] [year]
+General options: [-NC31] [-A months] [-B months]
+For debug the highlighting: [-H yyyy-mm-dd] [-d yyyy-mm]
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ man cal
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cal -1 10 016
+   Październik 16     
+ni po wt śr cz pi so  
+             1  2  3  
+ 4  5  6  7  8  9 10  
+11 12 13 14 15 16 17  
+18 19 20 21 22 23 24  
+25 26 27 28 29 30 31  
+                      
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ man cal
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cal -A  10 2016
+                            2016
+      Styczeń                 Luty                 Marzec         
+ni po wt śr cz pi so  ni po wt śr cz pi so  ni po wt śr cz pi so  
+                1  2      1  2  3  4  5  6         1  2  3  4  5  
+ 3  4  5  6  7  8  9   7  8  9 10 11 12 13   6  7  8  9 10 11 12  
+10 11 12 13 14 15 16  14 15 16 17 18 19 20  13 14 15 16 17 18 19  
+17 18 19 20 21 22 23  21 22 23 24 25 26 27  20 21 22 23 24 25 26  
+24 25 26 27 28 29 30  28 29                 27 28 29 30 31        
+31                                                                
+
+      Kwiecień                Maj                 Czerwiec        
+ni po wt śr cz pi so  ni po wt śr cz pi so  ni po wt śr cz pi so  
+                1  2   1  2  3  4  5  6  7            1  2  3  4  
+ 3  4  5  6  7  8  9   8  9 10 11 12 13 14   5  6  7  8  9 10 11  
+10 11 12 13 14 15 16  15 16 17 18 19 20 21  12 13 14 15 16 17 18  
+17 18 19 20 21 22 23  22 23 24 25 26 27 28  19 20 21 22 23 24 25  
+24 25 26 27 28 29 30  29 30 31              26 27 28 29 30        
+                                                                  
+
+       Lipiec               Sierpień              Wrzesień        
+ni po wt śr cz pi so  ni po wt śr cz pi so  ni po wt śr cz pi so  
+                1  2      1  2  3  4  5  6               1  2  3  
+ 3  4  5  6  7  8  9   7  8  9 10 11 12 13   4  5  6  7  8  9 10  
+10 11 12 13 14 15 16  14 15 16 17 18 19 20  11 12 13 14 15 16 17  
+17 18 19 20 21 22 23  21 22 23 24 25 26 27  18 19 20 21 22 23 24  
+24 25 26 27 28 29 30  28 29 30 31           25 26 27 28 29 30     
+31                                                                
+
+    Październik             Listopad              Grudzień        
+ni po wt śr cz pi so  ni po wt śr cz pi so  ni po wt śr cz pi so  
+                   1         1  2  3  4  5               1  2  3  
+ 2  3  4  5  6  7  8   6  7  8  9 10 11 12   4  5  6  7  8  9 10  
+ 9 10 11 12 13 14 15  13 14 15 16 17 18 19  11 12 13 14 15 16 17  
+16 17 18 19 20 21 22  20 21 22 23 24 25 26  18 19 20 21 22 23 24  
+23 24 25 26 27 28 29  27 28 29 30           25 26 27 28 29 30 31  
+30 31                                                             
+
+                            2017
+      Styczeń                 Luty                 Marzec         
+ni po wt śr cz pi so  ni po wt śr cz pi so  ni po wt śr cz pi so  
+ 1  2  3  4  5  6  7            1  2  3  4            1  2  3  4  
+ 8  9 10 11 12 13 14   5  6  7  8  9 10 11   5  6  7  8  9 10 11  
+15 16 17 18 19 20 21  12 13 14 15 16 17 18  12 13 14 15 16 17 18  
+22 23 24 25 26 27 28  19 20 21 22 23 24 25  19 20 21 22 23 24 25  
+29 30 31              26 27 28              26 27 28 29 30 31     
+                                                                  
+
+      Kwiecień                Maj                 Czerwiec        
+ni po wt śr cz pi so  ni po wt śr cz pi so  ni po wt śr cz pi so  
+                   1      1  2  3  4  5  6               1  2  3  
+ 2  3  4  5  6  7  8   7  8  9 10 11 12 13   4  5  6  7  8  9 10  
+ 9 10 11 12 13 14 15  14 15 16 17 18 19 20  11 12 13 14 15 16 17  
+16 17 18 19 20 21 22  21 22 23 24 25 26 27  18 19 20 21 22 23 24  
+23 24 25 26 27 28 29  28 29 30 31           25 26 27 28 29 30     
+30                                                                
+
+       Lipiec               Sierpień              Wrzesień        
+ni po wt śr cz pi so  ni po wt śr cz pi so  ni po wt śr cz pi so  
+                   1         1  2  3  4  5                  1  2  
+ 2  3  4  5  6  7  8   6  7  8  9 10 11 12   3  4  5  6  7  8  9  
+ 9 10 11 12 13 14 15  13 14 15 16 17 18 19  10 11 12 13 14 15 16  
+16 17 18 19 20 21 22  20 21 22 23 24 25 26  17 18 19 20 21 22 23  
+23 24 25 26 27 28 29  27 28 29 30 31        24 25 26 27 28 29 30  
+30 31                                                             
+
+    Październik       
+ni po wt śr cz pi so  
+ 1  2  3  4  5  6  7  
+ 8  9 10 11 12 13 14  
+15 16 17 18 19 20 21  
+22 23 24 25 26 27 28  
+29 30 31              
+                      
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cal -A 1 10 2016
+  Październik 2016       Listopad 2016      
+ni po wt śr cz pi so  ni po wt śr cz pi so  
+                   1         1  2  3  4  5  
+ 2  3  4  5  6  7  8   6  7  8  9 10 11 12  
+ 9 10 11 12 13 14 15  13 14 15 16 17 18 19  
+16 17 18 19 20 21 22  20 21 22 23 24 25 26  
+23 24 25 26 27 28 29  27 28 29 30           
+30 31                                       
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cal -A 1 09 2016
+   Wrzesień 2016        Październik 2016    
+ni po wt śr cz pi so  ni po wt śr cz pi so  
+             1  2  3                     1  
+ 4  5  6  7  8  9 10   2  3  4  5  6  7  8  
+11 12 13 14 15 16 17   9 10 11 12 13 14 15  
+18 19 20 21 22 23 24  16 17 18 19 20 21 22  
+25 26 27 28 29 30     23 24 25 26 27 28 29  
+                      30 31                 
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ man date
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ %w 25 05 1975
+bash: fg: %w: brak takiego zadania
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cal date %w 25 05 1975
+Usage: cal [general options] [-hjy] [[month] year]
+       cal [general options] [-hj] [-m month] [year]
+       ncal [general options] [-bhJjpwySM] [-s country_code] [[month] year]
+       ncal [general options] [-bhJeoSM] [year]
+General options: [-NC31] [-A months] [-B months]
+For debug the highlighting: [-H yyyy-mm-dd] [-d yyyy-mm]
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cal date %w 1975 05 25
+Usage: cal [general options] [-hjy] [[month] year]
+       cal [general options] [-hj] [-m month] [year]
+       ncal [general options] [-bhJjpwySM] [-s country_code] [[month] year]
+       ncal [general options] [-bhJeoSM] [year]
+General options: [-NC31] [-A months] [-B months]
+For debug the highlighting: [-H yyyy-mm-dd] [-d yyyy-mm]
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ man date
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ date %w(1975 05 25)
+bash: błąd składni przy nieoczekiwanym znaczniku `('
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ date %w (1975 05 25)
+bash: błąd składni przy nieoczekiwanym znaczniku `('
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cal -H 1975 05 25
+       Maj 25         
+ni po wt śr cz pi so  
+       1  2  3  4  5  
+ 6  7  8  9 10 11 12  
+13 14 15 16 17 18 19  
+20 21 22 23 24 25 26  
+27 28 29 30 31        
+                      
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cal 05 1975
+      Maj 1975        
+ni po wt śr cz pi so  
+             1  2  3  
+ 4  5  6  7  8  9 10  
+11 12 13 14 15 16 17  
+18 19 20 21 22 23 24  
+25 26 27 28 29 30 31  
+                      
+eturska@linux-p137-09:~/sp/temp/dom/wazne-sprawy$ cd ..
+eturska@linux-p137-09:~/sp/temp/dom$ cd ..
+eturska@linux-p137-09:~/sp/temp$ tree
+.
+├── dom
+│   └── wazne-sprawy
+│       ├── odtworzono.txt
+│       └── rachunki.txt
+├── nauka
+│   ├── c
+│   ├── logo
+│   │   ├── wykonano.txt
+│   │   ├── xaa
+│   │   ├── xab
+│   │   └── xac
+│   └── pascal
+└── praca
+    ├── dokumenty
+    │   ├── odtworzono.txt
+    │   ├── xaa
+    │   ├── xab
+    │   └── xac
+    └── zlecenia
+        ├── niezrealizowane
+        └── zrealizowane
+            ├── wykonano.txt
+            ├── xaa
+            ├── xab
+            └── xac
+
+11 directories, 14 files
+eturska@linux-p137-09:~/sp/temp$ cd ~/nauka/c
+bash: cd: /home/eturska/nauka/c: Nie ma takiego pliku ani katalogu
+eturska@linux-p137-09:~/sp/temp$ cd nauka
+eturska@linux-p137-09:~/sp/temp/nauka$ cd c
+eturska@linux-p137-09:~/sp/temp/nauka/c$ touch program.c
+eturska@linux-p137-09:~/sp/temp/nauka/c$ geany program.c 
+eturska@linux-p137-09:~/sp/temp/nauka/c$ head program.c 
+#include <stdio.h>
+int main()
+{
+    int number;
+
+    // printf() dislpays the formatted output 
+    printf("Enter an integer: ");  
+    
+    // scanf() reads the formatted input and stores them
+    scanf("%d", &number);  
+eturska@linux-p137-09:~/sp/temp/nauka/c$ head 2 program.c 
+head: nie można otworzyć '2' do czytania: Nie ma takiego pliku ani katalogu
+==> program.c <==
+#include <stdio.h>
+int main()
+{
+    int number;
+
+    // printf() dislpays the formatted output 
+    printf("Enter an integer: ");  
+    
+    // scanf() reads the formatted input and stores them
+    scanf("%d", &number);  
+eturska@linux-p137-09:~/sp/temp/nauka/c$ man head
+eturska@linux-p137-09:~/sp/temp/nauka/c$ head -2 lines program.c 
+head: nie można otworzyć 'lines' do czytania: Nie ma takiego pliku ani katalogu
+==> program.c <==
+#include <stdio.h>
+int main()
+eturska@linux-p137-09:~/sp/temp/nauka/c$ head -2 program.c 
+#include <stdio.h>
+int main()
+eturska@linux-p137-09:~/sp/temp/nauka/c$ tail -4 program.c 
+    // printf() displays the formatted output
+    printf("You entered: %d", number);
+    return 0;
+}
+eturska@linux-p137-09:~/sp/temp/nauka/c$ man grep
+eturska@linux-p137-09:~/sp/temp/nauka/c$ grep main (pro
+profiles  prolog    prove     
+eturska@linux-p137-09:~/sp/temp/nauka/c$ grep main (program.c
+bash: błąd składni przy nieoczekiwanym znaczniku `('
+eturska@linux-p137-09:~/sp/temp/nauka/c$ grep main (program.c)
+bash: błąd składni przy nieoczekiwanym znaczniku `('
+eturska@linux-p137-09:~/sp/temp/nauka/c$ grep main(program.c)
+bash: błąd składni przy nieoczekiwanym znaczniku `('
+eturska@linux-p137-09:~/sp/temp/nauka/c$ man grep
+eturska@linux-p137-09:~/sp/temp/nauka/c$ grep main program.c
+int main()
+eturska@linux-p137-09:~/sp/temp/nauka/c$ man hmod
+Brak podręcznika dla hmod
+eturska@linux-p137-09:~/sp/temp/nauka/c$ man chmod
+eturska@linux-p137-09:~/sp/temp/nauka/c$ ls -l
+razem 1
+-rw------- 1 eturska domain users 328 paź 15 12:36 program.c
+eturska@linux-p137-09:~/sp/temp/nauka/c$ chmod g
+chmod: brakujący argument po „g”
+Napisz „chmod --help” dla uzyskania informacji.
+eturska@linux-p137-09:~/sp/temp/nauka/c$ chmod g+r
+chmod: brakujący argument po „g+r”
+Napisz „chmod --help” dla uzyskania informacji.
+eturska@linux-p137-09:~/sp/temp/nauka/c$ chmod g +r
+chmod: błędne uprawnienia „g”
+Napisz „chmod --help” dla uzyskania informacji.
+eturska@linux-p137-09:~/sp/temp/nauka/c$ ls l
+ls: nie ma dostępu do 'l': Nie ma takiego pliku ani katalogu
+eturska@linux-p137-09:~/sp/temp/nauka/c$ ls -l
+razem 1
+-rw------- 1 eturska domain users 328 paź 15 12:36 program.c
+eturska@linux-p137-09:~/sp/temp/nauka/c$ chmod g +reading
+chmod: błędne uprawnienia „g”
+Napisz „chmod --help” dla uzyskania informacji.
+eturska@linux-p137-09:~/sp/temp/nauka/c$ chmod g +read
+chmod: błędne uprawnienia „g”
+Napisz „chmod --help” dla uzyskania informacji.
+eturska@linux-p137-09:~/sp/temp/nauka/c$ chmod g+r program.c
+eturska@linux-p137-09:~/sp/temp/nauka/c$ ls -la
+razem 1
+drwx------ 2 eturska domain users   0 paź 15 12:36 .
+drwx------ 5 eturska domain users   0 paź 15 10:50 ..
+-rw-r----- 1 eturska domain users 328 paź 15 12:36 program.c
+eturska@linux-p137-09:~/sp/temp/nauka/c$ cd ..
+eturska@linux-p137-09:~/sp/temp/nauka$ cd ..
+eturska@linux-p137-09:~/sp/temp$ tree
+.
+├── dom
+│   └── wazne-sprawy
+│       ├── odtworzono.txt
+│       └── rachunki.txt
+├── nauka
+│   ├── c
+│   │   └── program.c
+│   ├── logo
+│   │   ├── wykonano.txt
+│   │   ├── xaa
+│   │   ├── xab
+│   │   └── xac
+│   └── pascal
+└── praca
+    ├── dokumenty
+    │   ├── odtworzono.txt
+    │   ├── xaa
+    │   ├── xab
+    │   └── xac
+    └── zlecenia
+        ├── niezrealizowane
+        └── zrealizowane
+            ├── wykonano.txt
+            ├── xaa
+            ├── xab
+            └── xac
+
+11 directories, 15 files
+eturska@linux-p137-09:~/sp/temp$ mv ~/sp/temp/dom/wazne-sprawy ~/sp/temp/praca/
+eturska@linux-p137-09:~/sp/temp$ tree
+.
+├── dom
+├── nauka
+│   ├── c
+│   │   └── program.c
+│   ├── logo
+│   │   ├── wykonano.txt
+│   │   ├── xaa
+│   │   ├── xab
+│   │   └── xac
+│   └── pascal
+└── praca
+    ├── dokumenty
+    │   ├── odtworzono.txt
+    │   ├── xaa
+    │   ├── xab
+    │   └── xac
+    ├── wazne-sprawy
+    │   ├── odtworzono.txt
+    │   └── rachunki.txt
+    └── zlecenia
+        ├── niezrealizowane
+        └── zrealizowane
+            ├── wykonano.txt
+            ├── xaa
+            ├── xab
+            └── xac
+
+11 directories, 15 files
+eturska@linux-p137-09:~/sp/temp$ man zip
+eturska@linux-p137-09:~/sp/temp$ man tar
+eturska@linux-p137-09:~/sp/temp$ cd ..

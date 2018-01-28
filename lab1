@@ -1,0 +1,5 @@
+mkdir utworz katalog
+cd .. wyjdz
+cd przejdz do katalogu
+touch utworz plik
+rmdir usun katalog
